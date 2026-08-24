@@ -4,6 +4,9 @@
   "description": "Superpowers skills and runtime bootstrap for coding agents",
   "type": "module",
   "main": ".opencode/plugins/superpowers.js",
+  "scripts": {
+    "test:masterbook": "node --test tests/masterbook-verification.test.mjs"
+  },
   "keywords": [
     "pi-package",
     "skills",

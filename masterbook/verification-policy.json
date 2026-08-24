@@ -1,0 +1,24 @@
+{
+  "policy_id": "masterbook-bounded-verification-v1",
+  "max_cycles": 20,
+  "max_repair_attempts_per_fingerprint": 2,
+  "required_same_fingerprint_passes": 10,
+  "required_independent_reviews": {
+    "spec": 1,
+    "code": 1
+  },
+  "required_gates": [
+    "tests_passed",
+    "private_boundary_passed",
+    "copyright_gate_passed",
+    "source_provenance_passed",
+    "hard_skip_passed"
+  ],
+  "automation": {
+    "human_checkpoint": false,
+    "subagents": false,
+    "telemetry": false,
+    "skill_installation": false,
+    "direct_main_write": false
+  }
+}
